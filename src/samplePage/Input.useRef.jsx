@@ -8,10 +8,9 @@ export const Input = () => {
         <>
             {/* <input onChange={(e) => {
                 setText(e.target.value);
-                console.log(e.target.value)
             }} /> */}
             <input ref={refText} />
-            <button onClick={() => alert(refText.current.value)}>클릭!</button>
+            <button onClick={() => alert(`입력하신 단어는 ${refText.current.value}입니다`)}>클릭</button>
         </>
     )
 }
